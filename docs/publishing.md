@@ -1,27 +1,33 @@
-# Publish a test build
+# Build and publish a test kit
 
-Builds are made in the private `novuon/Patch` repository. This public repository receives only explicitly selected release assets and public documentation. Never mirror the private repository, its branches, tags or commit history here.
+Build test kits on the maintainer's machine from an exact, committed source tag in the private `novuon/Patch` checkout. This public repository provides the build wrapper and stores the release assets. No GitHub Actions build is used.
 
-## One-time setup in the private repository
+The application source remains private. The public release tag points to a deliberately minimal Git tree containing exactly three files: the kit `.tar.gz`, its `.sha256` checksum and the `-INSTALL.txt` instructions. GitHub's generated **Source code (zip)** and **Source code (tar.gz)** downloads are snapshots of that three-file tree.
 
-1. Register a GitHub App owned by `novuon`, with webhooks disabled and repository **Contents: read and write** permission. Install it on **only `novuon/patch-releases`**.
-2. Set repository variable `PUBLIC_RELEASE_APP_ID` to its App ID.
-3. Set Actions secret `PUBLIC_RELEASE_APP_PRIVATE_KEY` to the App's private key. Keep that key out of this public repository and out of logs.
-4. Set variable `PUBLIC_RELEASE_REPO` to `novuon/patch-releases`.
-5. Use only the reviewed tester-kit route: `PATCH_KIT=1` selects MIT Signalsmith Stretch and skips Rubber Band/FFTW; Slint uses its royalty-free desktop license, with the `AboutSlint` widget in the Controller's About tab. The kit includes the selected dependency license inventory and full license texts. Then set `PUBLIC_BINARY_DISTRIBUTION_APPROVED=true` in the private repository. Do not use this approval for the normal Arch build, which links GPL libraries and requires its corresponding source.
+## Build locally
 
-The publishing token should be short-lived and limited to this public repository. Do not copy a personal account's broad GitHub CLI token into CI.
+Requirements are the Patch build prerequisites in the private repository's `AGENTS.md`, a clean public release checkout, and a clean private source checkout with the exact source tag available locally.
 
-## Release flow
+From this repository's root, run:
 
-Use the private **Public test build** workflow with an existing version tag such as `v0.7.8-test.1`. The workflow validates that it is a tag, checks the committed version, runs tests and clippy, builds binary kits, verifies their allowlisted contents and saves private workflow artifacts.
+```bash
+scripts/build-test-kit.sh /path/to/Patch v0.7.8-test.2
+```
 
-Publication is opt-in. A publishing run requires the distribution gate and App credentials. It creates a **draft prerelease** with the complete kit, checksum, install notes and public build metadata. Review the draft in this repository, then publish it. The tag in this repository identifies the public documentation commit; it does not import a private source commit.
+The wrapper checks out that exact source commit in a temporary worktree, runs its committed `scripts/build-kit.sh` locally, verifies the checksum, and stages only the kit archive, checksum and install instructions under `dist/<source-tag>/`. The wrapper does not alter the source checkout or start a GitHub Actions workflow.
 
-The current workflow builds x86_64 only. A failed build or license/archive check blocks publication. Release assets include the matching `omarchy-patch` and `patch-remote`, installer, runtime resources, license report and notices. The old private release workflow packages source; its artifacts must never be copied into this repository.
+Review the staged files and build identifier. Then create or update the public tag snapshot:
 
-Do not upload application sources, Cargo files, private changelogs, development notes, CI logs, signing keys or raw library/test data. Build metadata may name the source commit hash and versions; it must not contain private source contents or paths.
+```bash
+scripts/tag-test-kit-snapshot.sh v0.7.8-test.2 dist/v0.7.8-test.2
+```
 
-## Manual upload from an already verified kit
+For a deliberate correction to a tag that already exists, pass `--replace-tag`. This force-updates that tag so the generated GitHub source archives contain the three files from the corrected kit. Verify the tag tree before editing the corresponding GitHub Release.
 
-Once distribution has been approved, an authorised maintainer can upload an already verified kit with `gh release create --repo novuon/patch-releases --draft --prerelease`, attaching its archive, checksum and install notes. Use public release notes written for testers rather than copying the private changelog.
+Create or update a draft prerelease in `novuon/patch-releases`, attach exactly those three files, and review the page. Publish the prerelease after confirming the named downloads and generated source archives show the expected kit. Keep the release notes neutral and link users to the named kit archive and checksum.
+
+## License and distribution
+
+`PATCH_KIT=1` selects MIT Signalsmith Stretch and skips Rubber Band/FFTW. Slint uses its royalty-free desktop license; its required `AboutSlint` widget appears in the Controller's About tab. The kit carries the selected dependency license inventory and full license texts. Do not distribute the normal Arch build through this repository: it links GPL libraries and requires its corresponding source.
+
+Never copy application source, Cargo files, private changelogs, development notes, CI logs, signing keys or raw library/test data into the public repository or release tag. The release-tag snapshot is limited to the three generated kit files.

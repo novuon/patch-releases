@@ -2,9 +2,9 @@
 
 Patch is an audio environment for Omarchy: routing, mixing, metering, recording, DJ decks, an AI DJ and a visualiser.
 
-This repository holds public test downloads, installation notes and feedback. Patch's application source and build workflows remain in a separate private repository.
+This repository holds the local test-kit release procedure, public downloads, installation notes and feedback. Patch's application source remains in a separate private repository.
 
-**Patch 0.7.8 test.1** is available for x86_64 testing. Download it from [Releases](https://github.com/novuon/patch-releases/releases). Test builds are marked **Pre-release**; choose a version explicitly rather than using GitHub's latest-release link.
+**Patch 0.7.8 test.2** is available for x86_64 testing. Download it from [Releases](https://github.com/novuon/patch-releases/releases). Test builds are marked **Pre-release**; choose a version explicitly rather than using GitHub's latest-release link.
 
 ## Start here
 
@@ -19,6 +19,8 @@ This repository holds public test downloads, installation notes and feedback. Pa
 Omarchy on Arch Linux with Hyprland 0.56 or newer. Builds are for `x86_64` only; ARM, Windows and macOS builds are not currently provided.
 
 A kit contains the compiled application, installer and runtime resources. It includes checksums and build provenance. It does not contain the private source repository.
+
+GitHub's generated source archives for each test release contain only the three kit files: the kit archive, its SHA-256 file and `-INSTALL.txt`. Download those named files from the release; the generated archive is the same kit bundle, not Patch application source.
 
 ## Distribution
 
