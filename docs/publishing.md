@@ -1,6 +1,6 @@
 # Build and publish a test kit
 
-Build test kits on the maintainer's machine from an exact, committed source tag in the private `novuon/Patch` checkout. This public repository provides the build wrapper and stores the release assets. No GitHub Actions build is used.
+Build test kits on the maintainer's machine from an exact, committed source revision in the private `novuon/Patch` checkout. This public repository provides the build wrapper and stores the release assets. No GitHub Actions build is used.
 
 The application source remains private. The public release tag points to a deliberately minimal Git tree containing exactly three files: the kit `.tar.gz`, its `.sha256` checksum and the `-INSTALL.txt` instructions. GitHub's generated **Source code (zip)** and **Source code (tar.gz)** downloads are snapshots of that three-file tree.
 
