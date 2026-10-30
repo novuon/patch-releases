@@ -20,7 +20,7 @@ Omarchy on Arch Linux with Hyprland 0.56 or newer. Builds are for `x86_64` only;
 
 A kit contains the compiled application, installer and runtime resources. It includes checksums and build provenance. It does not contain the private source repository.
 
-For **test.2 and newer**, GitHub's generated source archives contain exactly three kit files: the kit archive, its SHA-256 file and `-INSTALL.txt`. Earlier releases may have different source archive contents. The named release downloads are the same three files.
+GitHub's generated source archives for the published test releases contain exactly three kit files: the kit archive, its SHA-256 file and `-INSTALL.txt`. The named release downloads are the same three files.
 
 ## Distribution
 

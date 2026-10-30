@@ -20,10 +20,14 @@ archive=$(find "$artifact_dir" -maxdepth 1 -type f -name 'patch-*.tar.gz' ! -nam
   exit 1
 }
 release_version=${release_tag#v}
-[[ $archive == "patch-$release_version-linux-"*.tar.gz ]] || {
+release_version=${release_version%%-*}
+case "$archive" in
+  "patch-$release_version-"*"-linux-"*.tar.gz) ;;
+  *)
   echo "kit archive does not match release tag $release_tag: $archive" >&2
   exit 1
-}
+  ;;
+esac
 files=("$archive" "$archive.sha256" "${archive%.tar.gz}-INSTALL.txt")
 for file in "${files[@]}"; do
   [[ -f "$artifact_dir/$file" ]] || {
