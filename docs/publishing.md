@@ -6,15 +6,15 @@ The application source remains private. The public release tag points to a delib
 
 ## Build locally
 
-Requirements are the Patch build prerequisites in the private repository's `AGENTS.md`, a clean public release checkout, and a clean private source checkout with the exact source tag available locally.
+Requirements are the Patch build prerequisites in the private repository's `AGENTS.md`, a clean public release checkout, and a clean private source checkout containing the exact source commit. Use its full commit hash so the build does not depend on a moving branch or create a private `*-test.*` tag that starts GitHub Actions.
 
 From this repository's root, run:
 
 ```bash
-scripts/build-test-kit.sh /path/to/Patch v0.7.8-test.2
+scripts/build-test-kit.sh /path/to/Patch 7de5c8a65e6c4b054ad2a5c7e76b5323c05f816f test.2 dist/v0.7.8-test.2
 ```
 
-The wrapper checks out that exact source commit in a temporary worktree, runs its committed `scripts/build-kit.sh` locally, verifies the checksum, and stages only the kit archive, checksum and install instructions under `dist/<source-tag>/`. The wrapper does not alter the source checkout or start a GitHub Actions workflow.
+The wrapper checks out that exact source commit in a temporary worktree, runs its committed `scripts/build-kit.sh` locally, verifies the checksum, and stages only the kit archive, checksum and install instructions under `dist/<kit-label>/`. The wrapper does not alter the source checkout or start a GitHub Actions workflow.
 
 Review the staged files and build identifier. Then create or update the public tag snapshot:
 
