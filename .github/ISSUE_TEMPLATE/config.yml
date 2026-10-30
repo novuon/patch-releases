@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Installation and testing guide
+    url: https://github.com/novuon/patch-releases/blob/main/docs/installation.md
+    about: Check requirements, checksums, installation and updates.

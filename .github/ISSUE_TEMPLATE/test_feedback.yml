@@ -1,0 +1,25 @@
+name: Test feedback
+description: Share what worked and what needs attention in a test build.
+title: "[Feedback] "
+labels: [feedback]
+body:
+  - type: input
+    id: version
+    attributes:
+      label: Patch version
+    validations:
+      required: true
+  - type: textarea
+    id: tested
+    attributes:
+      label: What did you test?
+      description: Include your setup and the parts of Patch you used.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: How did it go?
+      description: What worked, what was confusing, and what would you change?
+    validations:
+      required: true

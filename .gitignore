@@ -1,0 +1,6 @@
+*.tar.gz
+*.tar.gz.sha256
+*.zip
+*.pem
+*.key
+.env
