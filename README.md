@@ -4,7 +4,7 @@ Patch is an audio environment for Omarchy: routing, mixing, metering, recording,
 
 This repository holds the local test-kit release procedure, public downloads, installation notes and feedback. Patch's application source remains in a separate private repository.
 
-**Patch 0.7.8 test.3** is available for x86_64 testing. Download it from [Releases](https://github.com/novuon/patch-releases/releases). Test builds are marked **Pre-release**; choose a version explicitly rather than using GitHub's latest-release link.
+**Patch 0.7.8 test.4** is available for x86_64 testing. Download it from [Releases](https://github.com/novuon/patch-releases/releases). Test builds are marked **Pre-release**; choose a version explicitly rather than using GitHub's latest-release link.
 
 ## Start here
 
