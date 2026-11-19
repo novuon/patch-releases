@@ -1,5 +1,9 @@
 # Release history
 
+## 0.8.1 — 2026-11-19
+
+The one-line installer works from any folder; adding Auto Mix before its key is remembered and it comes on, with its stems, when the key is activated; no mirror download error shows while Patch fetches a release's module list. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.1).
+
 ## 0.8.0 — 2026-11-19
 
 The first public release. Install in one line (`curl -fsSL https://get.patchaudio.app | bash`) and choose how you use Patch: Standard, DJ, Podcast, Live coding, Everything or Custom. Modules are added and removed later from Ctrl+K, Setup, Modules; themes and wallpapers download when you want them. Auto Mix (the AI DJ) is a subscription, with a paid first week to try it. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.0).
