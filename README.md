@@ -16,6 +16,10 @@ The installer downloads the newest release from this repository's [Releases](htt
 
 Auto Mix plans and mixes a set from your own music. Subscribe for a year, or try it first for one week; continued within that week, the first year costs less. Payment and licence keys are handled by Polar, the merchant of record. The key is entered once (in the installer or Ctrl+K, Setup, Subscription) and works offline.
 
+## Source code
+
+Patch's code is open source (MIT): [novuon/patch-audio](https://github.com/novuon/patch-audio).
+
 ## Start here
 
 - [Install, update or remove Patch](docs/installation.md)
@@ -27,7 +31,7 @@ Auto Mix plans and mixes a set from your own music. Subscribe for a year, or try
 
 Omarchy on Arch Linux with Hyprland 0.56 or newer, `x86_64`. ARM, Windows and macOS builds are not provided.
 
-A release contains the compiled application, its installer and runtime resources, checksums and build provenance; the module downloads (themes, wallpapers) and their signed list are separate release files. The application source is private.
+A release contains the compiled application, its installer and runtime resources, checksums and build provenance; the module downloads (themes, wallpapers) and their signed list are separate release files. The source code is at [novuon/patch-audio](https://github.com/novuon/patch-audio).
 
 ## Distribution
 
