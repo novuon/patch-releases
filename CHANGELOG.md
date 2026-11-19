@@ -1,5 +1,9 @@
 # Release history
 
+## 0.8.3 — 2026-11-19
+
+The controller (Ctrl+K) no longer says MOCK in a working Patch, and Setup's profile cards wrap instead of running off the window's edge. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.3).
+
 ## 0.8.2 — 2026-11-19
 
 Stems are free and not part of Auto Mix: no subscription needed. They are not installed by default; Auto Mix brings them, and `omarchy-patch modules add stems` adds them. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.2).
