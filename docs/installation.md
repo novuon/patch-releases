@@ -1,6 +1,12 @@
-# Install a test build
+# Install Patch
 
-These instructions apply to the test kits attached to the [public releases](https://github.com/novuon/patch-releases/releases).
+The quickest way:
+
+```bash
+curl -fsSL https://get.patchaudio.app | bash
+```
+
+It downloads the newest release for your machine from [Releases](https://github.com/novuon/patch-releases/releases), checks its SHA-256 and runs its installer. Arguments go to the installer, for example `curl -fsSL https://get.patchaudio.app | bash -s -- --profile dj`. The manual way follows.
 
 ## Requirements
 
@@ -10,18 +16,18 @@ These instructions apply to the test kits attached to the [public releases](http
 
 ## Download and verify
 
-1. Open [Releases](https://github.com/novuon/patch-releases/releases) and choose a test version.
+1. Open [Releases](https://github.com/novuon/patch-releases/releases) and choose a version.
 2. Download the matching `.tar.gz` and its `.tar.gz.sha256` file into the same folder. Also keep the `-INSTALL.txt` instructions.
 3. Check the filename in the following commands against the actual download:
 
    ```bash
-   sha256sum -c patch-VERSION-LABEL-linux-x86_64.tar.gz.sha256
-   tar -xzf patch-VERSION-LABEL-linux-x86_64.tar.gz
+   sha256sum -c patch-VERSION-linux-x86_64.tar.gz.sha256
+   tar -xzf patch-VERSION-linux-x86_64.tar.gz
    cd patch-VERSION
    ./install.sh
    ```
 
-The installer offers Minimal, Full or Custom and a default window layout. It can install required packages and the optional stem separator.
+The installer asks how you use Patch (Standard, DJ, Podcast, Live coding, Everything or Custom), which modules come with it, your default window layout and, with Auto Mix, your subscription key (or add it later). It installs the Arch packages Patch needs. Themes and wallpapers download from the release when you choose them; Auto Mix's stem separator downloads once its subscription is active.
 
 Log out and back in if the installer asks, so real-time scheduling permissions take effect. At login the audio service may start according to setup; Patch's windows do not open automatically.
 
@@ -29,7 +35,7 @@ The archive includes readable installer and runtime helper scripts. The applicat
 
 ## Update
 
-Keep the previous kit. Run the new kit's installer without uninstalling first. Patch keeps its library and settings. An engine handover can depend on playback state; follow the installer's output rather than assuming a test update is interruption-free.
+Run the newest installer again (`curl -fsSL https://get.patchaudio.app | bash`, or a downloaded kit's `./install.sh`) without uninstalling first. Enter through its screens keeps your setup; Patch keeps its library, settings and subscription.
 
 ## Roll back
 

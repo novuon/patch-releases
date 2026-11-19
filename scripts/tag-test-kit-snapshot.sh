@@ -22,7 +22,7 @@ archive=$(find "$artifact_dir" -maxdepth 1 -type f -name 'patch-*.tar.gz' ! -nam
 release_version=${release_tag#v}
 release_version=${release_version%%-*}
 case "$archive" in
-  "patch-$release_version-"*"-linux-"*.tar.gz) ;;
+  "patch-$release_version-linux-"*.tar.gz | "patch-$release_version-"*"-linux-"*.tar.gz) ;;
   *)
   echo "kit archive does not match release tag $release_tag: $archive" >&2
   exit 1
@@ -59,7 +59,7 @@ tree=$(
   done | LC_ALL=C sort | git -C "$public_repo" mktree
 )
 parent=$(git -C "$public_repo" rev-parse origin/main)
-commit=$(printf 'Test kit files for %s\n' "$release_tag" \
+commit=$(printf 'Kit files for %s\n' "$release_tag" \
   | git -C "$public_repo" commit-tree "$tree" -p "$parent")
 
 if [[ $replace_tag == --replace-tag ]]; then

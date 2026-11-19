@@ -1,29 +1,36 @@
-# Patch — test builds
+# Patch
 
-Patch is an audio environment for Omarchy: routing, mixing, metering, recording, DJ decks, an AI DJ and a visualiser.
+Patch is the audio environment for Omarchy: Patch becomes your system's sound, with a mixer, EQ, meters, routing, recording, DJ decks, a visualiser, podcast and live-coding tools. **Auto Mix**, the AI DJ, is an optional subscription; everything else is free.
 
-This repository holds the local test-kit release procedure, public downloads, installation notes and feedback. Patch's application source remains in a separate private repository.
+**Patch 0.8.0** is the current release, for `x86_64`.
 
-**Patch 0.7.8 test.4** is available for x86_64 testing. Download it from [Releases](https://github.com/novuon/patch-releases/releases). Test builds are marked **Pre-release**; choose a version explicitly rather than using GitHub's latest-release link.
+## Install
+
+```bash
+curl -fsSL https://get.patchaudio.app | bash
+```
+
+The installer downloads the newest release from this repository's [Releases](https://github.com/novuon/patch-releases/releases), checks its SHA-256 and asks how you use Patch: Standard (your sound, the Mixer and the EQ), DJ, Podcast, Live coding, Everything or Custom. Add or remove modules later with Ctrl+K, Setup, Modules. Details and the manual download: [Install Patch](docs/installation.md).
+
+## Auto Mix
+
+Auto Mix plans and mixes a set from your own music. Subscribe for a year, or try it first for one week; continued within that week, the first year costs less. Payment and licence keys are handled by Polar, the merchant of record. The key is entered once (in the installer or Ctrl+K, Setup, Subscription) and works offline.
 
 ## Start here
 
-- [Install or update a test build](docs/installation.md)
-- [What to test and how to report a problem](docs/testing.md)
+- [Install, update or remove Patch](docs/installation.md)
 - [Report a bug](https://github.com/novuon/patch-releases/issues/new?template=bug_report.yml)
-- [Share test feedback](https://github.com/novuon/patch-releases/issues/new?template=test_feedback.yml)
+- [Share feedback](https://github.com/novuon/patch-releases/issues/new?template=test_feedback.yml)
 - [Release history](CHANGELOG.md)
 
 ## Supported machines
 
-Omarchy on Arch Linux with Hyprland 0.56 or newer. Builds are for `x86_64` only; ARM, Windows and macOS builds are not currently provided.
+Omarchy on Arch Linux with Hyprland 0.56 or newer, `x86_64`. ARM, Windows and macOS builds are not provided.
 
-A kit contains the compiled application, installer and runtime resources. It includes checksums and build provenance. It does not contain the private source repository.
-
-GitHub's generated source archives for the published test releases contain exactly three kit files: the kit archive, its SHA-256 file and `-INSTALL.txt`. The named release downloads are the same three files.
+A release contains the compiled application, its installer and runtime resources, checksums and build provenance; the module downloads (themes, wallpapers) and their signed list are separate release files. The application source is private.
 
 ## Distribution
 
-Public tester kits use the `PATCH_KIT=1` build, which selects MIT Signalsmith Stretch and does not link GPL-licensed Rubber Band or FFTW. The desktop application uses Slint under its royalty-free desktop license and displays the required attribution in the Controller's About tab. Each kit includes its applicable licence and third-party notices. This path applies to public tester kits only. See [third-party notices](THIRD_PARTY_NOTICES.md).
+Releases use the `PATCH_KIT=1` build, which selects MIT Signalsmith Stretch and does not link GPL-licensed Rubber Band or FFTW. The desktop application uses Slint under its royalty-free desktop license and displays the required attribution in the Controller's About tab. Each kit includes its applicable licence and third-party notices. See [third-party notices](THIRD_PARTY_NOTICES.md).
 
 [Maintainer publishing setup](docs/publishing.md)
