@@ -1,5 +1,9 @@
 # Release history
 
+## 0.8.2 — 2026-11-19
+
+Stems are free and not part of Auto Mix: no subscription needed. They are not installed by default; Auto Mix brings them, and `omarchy-patch modules add stems` adds them. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.2).
+
 ## 0.8.1 — 2026-11-19
 
 The one-line installer works from any folder; adding Auto Mix before its key is remembered and it comes on, with its stems, when the key is activated; no mirror download error shows while Patch fetches a release's module list. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.1).

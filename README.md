@@ -2,7 +2,7 @@
 
 Patch is the audio environment for Omarchy: Patch becomes your system's sound, with a mixer, EQ, meters, routing, recording, DJ decks, a visualiser, podcast and live-coding tools. **Auto Mix**, the AI DJ, is an optional subscription; everything else is free.
 
-**Patch 0.8.1** is the current release, for `x86_64`.
+**Patch 0.8.2** is the current release, for `x86_64`.
 
 ## Install
 
