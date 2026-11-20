@@ -35,7 +35,7 @@ The archive includes readable installer and runtime helper scripts. The applicat
 
 ## Update
 
-Run the newest installer again (`curl -fsSL https://get.patchaudio.app | bash`, or a downloaded kit's `./install.sh`) without uninstalling first. Enter through its screens keeps your setup; Patch keeps its library, settings and subscription.
+Run the newest installer again (`curl -fsSL https://get.patchaudio.app | bash`, or a downloaded kit's `./install.sh`) without uninstalling first. Enter through its screens keeps your setup; Patch keeps its library and settings.
 
 ## Roll back
 
