@@ -27,7 +27,7 @@ It downloads the newest release for your machine from [Releases](https://github.
    ./install.sh
    ```
 
-The installer asks how you use Patch (Standard, DJ, Podcast, Live coding, Everything or Custom), which modules come with it, your default window layout and, with Auto Mix, your subscription key (or add it later). It installs the Arch packages Patch needs. Themes and wallpapers download from the release when you choose them; Auto Mix's stem separator downloads once its subscription is active.
+The installer asks how you use Patch (Standard, DJ, Podcast, Live coding, Everything or Custom), which modules come with it, and your default window layout. It installs the Arch packages Patch needs. Themes and wallpapers download from the release when you choose them.
 
 Log out and back in if the installer asks, so real-time scheduling permissions take effect. At login the audio service may start according to setup; Patch's windows do not open automatically.
 

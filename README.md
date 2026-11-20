@@ -1,8 +1,8 @@
 # Patch
 
-Patch is the audio environment for Omarchy: Patch becomes your system's sound, with a mixer, EQ, meters, routing, recording, DJ decks, a visualiser, podcast and live-coding tools. **Auto Mix**, the AI DJ, is an optional subscription; everything else is free.
+Patch is the audio environment for Omarchy: Patch becomes your system's sound, with a mixer, EQ, meters, routing, recording, DJ decks, a visualiser, podcast and live-coding tools.
 
-The first release of Patch is coming soon. The earlier builds below are previews.
+The first release of Patch is coming soon. The builds listed under Releases until then are older test builds.
 
 ## Install
 
@@ -14,7 +14,7 @@ The installer downloads the newest release from this repository's [Releases](htt
 
 ## Auto Mix
 
-Auto Mix plans and mixes a set from your own music. Subscribe for a year, or try it first for one week; continued within that week, the first year costs less. Payment and licence keys are handled by Polar, the merchant of record. The key is entered once (in the installer or Ctrl+K, Setup, Subscription) and works offline.
+Auto Mix, the AI DJ that plans and mixes a set from your own music, is coming soon. Leave your email at [patchaudio.app/auto-mix](https://patchaudio.app/auto-mix) to hear when it's available.
 
 ## Source code
 
