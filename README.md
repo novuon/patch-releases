@@ -18,7 +18,7 @@ Auto Mix, the AI DJ that plans and mixes a set from your own music, is coming so
 
 ## Source code
 
-Patch's code is open source (MIT): [novuon/patch-audio](https://github.com/novuon/patch-audio).
+Patch's source code: coming soon.
 
 ## Start here
 
@@ -31,7 +31,7 @@ Patch's code is open source (MIT): [novuon/patch-audio](https://github.com/novuo
 
 Omarchy on Arch Linux with Hyprland 0.56 or newer, `x86_64`. ARM, Windows and macOS builds are not provided.
 
-A release contains the compiled application, its installer and runtime resources, checksums and build provenance; the module downloads (themes, wallpapers) and their signed list are separate release files. The source code is at [novuon/patch-audio](https://github.com/novuon/patch-audio).
+A release contains the compiled application, its installer and runtime resources, checksums and build provenance; the module downloads (themes, wallpapers) and their signed list are separate release files.
 
 ## Distribution
 
