@@ -1,5 +1,9 @@
 # Release history
 
+## 0.8.5 — 2026-11-20
+
+The first release of Patch. Choose how you use it (Standard, DJ, Podcast, Live coding or Everything) and add or remove modules later in Ctrl+K › Setup › Modules; big downloads such as the wallpapers run in the background. Install with `curl -fsSL https://get.patchaudio.app | bash`. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.5) for downloads and notes.
+
 ## 0.7.8-test.4 — 2026-11-06
 
 Current x86_64 test kit. Updating now keeps your setup: Enter through the installer changes nothing. The bar's output and input rows work on the current Omarchy panel; windows redraw correctly after a resize; the Mixer, Analyzer, Meter and EQ fit better at small sizes; online tracks that are one finished file play on the decks. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.7.8-test.4) for downloads and notes.

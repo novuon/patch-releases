@@ -2,7 +2,7 @@
 
 Patch is the audio environment for Omarchy: Patch becomes your system's sound, with a mixer, EQ, meters, routing, recording, DJ decks, a visualiser, podcast and live-coding tools.
 
-The first release of Patch is coming soon. The builds listed under Releases until then are older test builds.
+Patch 0.8.5 is the first release.
 
 ## Install
 
