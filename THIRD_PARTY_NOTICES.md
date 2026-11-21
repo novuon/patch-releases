@@ -9,8 +9,9 @@ and Web Applications License 2.0.
 Public tester kits use `PATCH_KIT=1`: the deck stretcher is vendored
 Signalsmith Stretch and the kit does not link Rubber Band or FFTW. The
 Slint royalty-free desktop license permits either an AboutSlint widget in
-an About screen or a public webpage badge. Patch displays the widget in the
-Controller's About tab, so release pages do not need the Slint logo. See the
+an About screen or a public webpage badge. Patch shows Slint's attribution
+badge on this repository's README, the page its releases are downloaded
+from (the license's section 2(b)). See the
 [Slint license terms](https://slint.dev/terms-and-conditions#slint-royalty-free-license-20).
 
 The normal private Arch build uses Rubber Band and FFTW under GPL-2.0-or-later

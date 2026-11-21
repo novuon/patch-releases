@@ -35,6 +35,10 @@ A release contains the compiled application, its installer and runtime resources
 
 ## Distribution
 
-Releases use the `PATCH_KIT=1` build, which selects MIT Signalsmith Stretch and does not link GPL-licensed Rubber Band or FFTW. The desktop application uses Slint under its royalty-free desktop license and displays the required attribution in the Controller's About tab. Each kit includes its applicable licence and third-party notices. See [third-party notices](THIRD_PARTY_NOTICES.md).
+Releases use the `PATCH_KIT=1` build, which selects MIT Signalsmith Stretch and does not link GPL-licensed Rubber Band or FFTW. The desktop application uses Slint under its royalty-free desktop license, with Slint's attribution badge below. Each kit includes its applicable licence and third-party notices. See [third-party notices](THIRD_PARTY_NOTICES.md).
+
+Built with Rust, C, C++, assembly and [Slint](https://slint.dev).
+
+[<img src="docs/images/made-with-slint.png" alt="#MadeWithSlint" width="160">](https://slint.dev)
 
 [Maintainer publishing setup](docs/publishing.md)
