@@ -1,5 +1,9 @@
 # Release history
 
+## 0.8.6 — 2026-11-23
+
+The Network Unit (key Z) sends the Program or an AUX to other machines on your network and plays their streams in Patch. Mic takes a call's far end with mix-minus and a browser's voice as a voice source; the Tidal Unit gets a real code editor that lights up as it plays; Broadcast sends the Performer's picture with RTMP. Plus fixes to the Mixer's send knobs, Mic sliders, deck loops, Broadcast and the audio clock. Update with the same one line: `curl -fsSL https://get.patchaudio.app | bash`. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.6) for downloads and notes.
+
 ## 0.8.5 — 2026-11-20
 
 The first release of Patch. Choose how you use it (Standard, DJ, Podcast, Live coding or Everything) and add or remove modules later in Ctrl+K › Setup › Modules; big downloads such as the wallpapers run in the background. Install with `curl -fsSL https://get.patchaudio.app | bash`. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.5) for downloads and notes.
