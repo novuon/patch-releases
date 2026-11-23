@@ -18,7 +18,7 @@ Auto Mix, the AI DJ that plans and mixes a set from your own music, is coming so
 
 ## Source code
 
-Patch's source code: coming soon.
+Patch's source code is at [novuon/patch-audio](https://github.com/novuon/patch-audio) (MIT). Each release there is tagged with the same version as here.
 
 ## Start here
 
