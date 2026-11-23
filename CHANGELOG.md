@@ -2,7 +2,7 @@
 
 ## 0.8.7 — 2026-11-23
 
-Auto Mix is available: the DJ that orders and crossfades a set from your own library unlocks with a key, $69 a year or one week for $8.99 to try it ([patchaudio.app/auto-mix](https://patchaudio.app/auto-mix)). After paying, the key is behind Access purchase in Polar's email. Everything else in Patch stays free. Update with the same one line: `curl -fsSL https://get.patchaudio.app | bash`. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.7) for downloads and notes.
+Clearer messages when you enter a licence key. Everything from 0.8.6 is included. Update with the same one line: `curl -fsSL https://get.patchaudio.app | bash`. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.7) for downloads and notes.
 
 ## 0.8.6 — 2026-11-23
 
