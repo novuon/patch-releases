@@ -49,5 +49,5 @@ Uninstall
 
 Feedback
   Tell us what you tried, what happened and what you expected. The version
-  is at the bottom right of every Patch window (v0.8.7 · bdaf6e6).
+  is at the bottom right of every Patch window (v0.8.7 · 420dd39).
   Report a bug: https://github.com/novuon/patch-releases/issues
