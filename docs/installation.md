@@ -29,7 +29,7 @@ It downloads the newest release for your machine from [Releases](https://github.
 
 The installer asks how you use Patch (Standard, DJ, Podcast, Live coding, Everything or Custom), which modules come with it, and your default window layout. It installs the Arch packages Patch needs. Themes and wallpapers download from the release when you choose them.
 
-Log out and back in if the installer asks, so real-time scheduling permissions take effect. At login the audio service may start according to setup; Patch's windows do not open automatically.
+Then log out and back in once (or restart); the installer ends by saying so when it is needed. Patch works right away, but real-time audio, which keeps the sound steady when the computer is busy, starts with your next login. At login the audio service may start according to setup; Patch's windows do not open automatically.
 
 The archive includes readable installer and runtime helper scripts. The application source repository remains private.
 

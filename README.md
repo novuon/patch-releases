@@ -31,6 +31,8 @@ curl -fsSL https://get.patchaudio.app | bash
 
 The installer downloads the newest release, checks its SHA-256 and asks how you use Patch: Standard (your sound, the Mixer and the EQ), DJ, Podcast, Live coding, Everything or Custom. Updating is the same line, and keeps your setup, library and settings. Add or remove modules later with <kbd>Ctrl</kbd>+<kbd>K</kbd> › Setup › Modules.
 
+Then log out and back in once (or restart). Patch works right away; real-time audio, which keeps the sound steady when the computer is busy, starts with your next login. The installer ends by reminding you.
+
 ## What's inside
 
 A selection of the units in Patch; there are more, and the [documentation](https://patchaudio.app/docs) covers them all.

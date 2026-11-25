@@ -1,5 +1,9 @@
 # Release history
 
+## 0.8.8 — 2026-11-25
+
+Installing Patch no longer makes other audio apps crash. The installer added rtkit, and until you logged in again the system stopped apps whose sound thread worked hard for a moment (the terminal player cliamp closed a second after it started). Patch no longer installs it and gets real-time audio from the realtime group instead, the same as before after one login. The installer now ends with that last step: log out and back in once (or restart). Update with the same one line: `curl -fsSL https://get.patchaudio.app | bash`. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.8) for downloads and notes.
+
 ## 0.8.7 — 2026-11-23
 
 Clearer messages when you enter a licence key. Everything from 0.8.6 is included. Update with the same one line: `curl -fsSL https://get.patchaudio.app | bash`. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.7) for downloads and notes.
