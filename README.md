@@ -5,8 +5,8 @@
 <p align="center">
   <a href="https://github.com/novuon/patch-releases/releases/latest"><img src="https://img.shields.io/github/v/release/novuon/patch-releases?style=flat-square&label=release&color=F0243B" alt="Latest release"></a>
   <a href="https://github.com/novuon/patch-releases/releases"><img src="https://img.shields.io/github/downloads/novuon/patch-releases/total?style=flat-square&color=141114" alt="Downloads"></a>
-  <a href="https://patchaudio.app/download"><img src="https://img.shields.io/badge/Omarchy-Arch%20Linux%20%C2%B7%20Hyprland-141114?style=flat-square" alt="Omarchy: Arch Linux and Hyprland"></a>
-  <img src="https://img.shields.io/badge/x86__64-141114?style=flat-square" alt="x86_64">
+  <a href="https://patchaudio.app/download"><img src="https://img.shields.io/badge/Omarchy-also%20Ubuntu%20%C2%B7%20Fedora%20%C2%B7%20Debian%20%C2%B7%20openSUSE%20%C2%B7%20Arch-141114?style=flat-square" alt="Omarchy, and Ubuntu, Fedora, Debian, openSUSE and Arch"></a>
+  <img src="https://img.shields.io/badge/x86__64%20%C2%B7%20ARM64-141114?style=flat-square" alt="x86_64 and ARM64">
   <img src="https://img.shields.io/badge/Rust-141114?style=flat-square&logo=rust&logoColor=white" alt="Written in Rust">
   <a href="https://patchaudio.app"><img src="https://img.shields.io/badge/website-patchaudio.app-F0243B?style=flat-square" alt="Website: patchaudio.app"></a>
 </p>
@@ -19,7 +19,7 @@
   <a href="https://github.com/novuon/patch-releases/issues/new?template=bug_report.yml"><b>Report a bug</b></a>
 </p>
 
-**Patch is the audio environment for Omarchy.** It becomes your system's sound: one real-time engine with a mixer, EQ, meters, routing, recording, DJ decks, a visualiser, and podcast and live-coding tools. The engine keeps playing when windows close or Patch updates.
+**Patch is the audio environment for Omarchy**, and it runs on other Linux distributions too. It becomes your system's sound: one real-time engine with a mixer, EQ, meters, routing, recording, DJ decks, a visualiser, and podcast and live-coding tools. The engine keeps playing when windows close or Patch updates.
 
 <p align="center"><img src="docs/readme/screenshot.png" alt="Patch: the Mixer, the Mixer Inspector and the Router" width="100%"></p>
 
