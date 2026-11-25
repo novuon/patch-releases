@@ -1,0 +1,55 @@
+Patch 0.8.8
+===========
+
+Patch replaces Omarchy's audio with a pro mixer, router, meters and EQ,
+plus optional DJ decks, a visualiser, podcast tools and more.
+
+You need
+  - Omarchy (Arch Linux with Hyprland 0.56 or newer; check: hyprctl version),
+    on an x86_64 computer
+  - sudo rights (the installer adds a few Arch packages)
+
+Updating from an earlier version
+  Run ./install.sh from this kit over the old one; no need to uninstall.
+  The running Patch hands over to the new version at once, without a gap,
+  and your library, settings and layouts stay.
+
+Install
+  1. Download patch-0.8.8-linux-x86_64.tar.gz (and the .sha256 next to it)
+  2. Open a terminal in the folder you downloaded it to, and run:
+
+       sha256sum -c patch-0.8.8-linux-x86_64.tar.gz.sha256
+       tar xzf patch-0.8.8-linux-x86_64.tar.gz
+       cd patch-0.8.8
+       ./install.sh
+
+  3. Choose how you use Patch: Standard (Patch as your sound, the Mixer
+     and the EQ), DJ, Podcast, Live coding, Everything or Custom. Tick the
+     modules you want, then your default layout.
+  4. Read the short guide the installer shows at the end.
+  5. Log out and back in once (or restart). Patch works right away, but
+     real-time audio, which keeps the sound steady when the computer is
+     busy, starts with your next login. Once is enough.
+
+First steps
+  - Open "Patch" or one of the "Patch …" apps from the launcher (Super+Space).
+  - In any Patch window, Ctrl+K opens the controller: every Unit, the
+    layouts and Setup.
+  - The bar's volume menu has a Patch section: Patch itself is selected,
+    which gives the full Mixer console.
+  - omarchy-patch welcome shows the guide again.
+  - More later: Ctrl+K, Setup, Modules (or omarchy-patch modules).
+  - Phone remote (with DJ): sign this machine in to
+    Tailscale first, then open https://<this machine>.ts.net:8124 on a
+    phone signed in to the same Tailscale account. Without Tailscale the
+    remote is installed but stays off; run ./install.sh again after
+    tailscale up.
+
+Uninstall
+  In the same folder: ./uninstall.sh   (Omarchy's own audio comes back;
+  ./uninstall.sh --purge also removes your library and settings)
+
+Feedback
+  Tell us what you tried, what happened and what you expected. The version
+  is at the bottom right of every Patch window (v0.8.8 · f40c7e1).
+  Report a bug: https://github.com/novuon/patch-releases/issues
