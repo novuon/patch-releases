@@ -1,5 +1,5 @@
 <p align="center">
-  <a href="https://patchaudio.app"><img src="docs/readme/banner.png" alt="Patch: the Omarchy audio environment" width="100%"></a>
+  <a href="https://patchaudio.app"><img src="docs/readme/banner.png" alt="Patch: the Omarchy &amp; Linux audio environment" width="100%"></a>
 </p>
 
 <p align="center">
