@@ -1,5 +1,9 @@
 # Release history
 
+## 0.8.9 — 2026-11-25
+
+Patch now installs on other Linux distributions too: Ubuntu 24.04 and newer, Linux Mint 22, Debian 13, Fedora 40 and newer, openSUSE Tumbleweed and plain Arch, on PCs and 64-bit ARM, with the system's own package manager. On desktops that don't tile windows, such as GNOME and KDE, a layout opens as one window with its Units side by side; Patch adds a tray menu, shows the Player in the desktop's media controls and follows its light or dark style. Omarchy on ARM (such as Apple Silicon MacBooks) gets its own ready-made Patch. Every setup now includes the Patch themes, each with four wallpapers. An install run by an AI agent or a script, with no setup screen to show, lists the choices and stops instead of picking one for you. Install or update with the same one line: `curl -fsSL https://get.patchaudio.app | bash`. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.9) for downloads and notes.
+
 ## 0.8.8 — 2026-11-25
 
 Installing Patch no longer makes other audio apps crash. The installer added rtkit, and until you logged in again the system stopped apps whose sound thread worked hard for a moment (the terminal player cliamp closed a second after it started). Patch no longer installs it and gets real-time audio from the realtime group instead, the same as before after one login. The installer now ends with that last step: log out and back in once (or restart). Wallpapers & intros now show in Omarchy's wallpaper picker once they have downloaded (they were installed but missing); running the installer again fixes a computer that has them. Update with the same one line: `curl -fsSL https://get.patchaudio.app | bash`. See the [release page](https://github.com/novuon/patch-releases/releases/tag/v0.8.8) for downloads and notes.

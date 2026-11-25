@@ -33,6 +33,8 @@ The installer downloads the newest release, checks its SHA-256 and asks how you 
 
 Then log out and back in once (or restart). Patch works right away; real-time audio, which keeps the sound steady when the computer is busy, starts with your next login. The installer ends by reminding you.
 
+**Installing with an AI agent?** An agent has no terminal for the setup screen, so a first install lists the setups and stops without changing anything. The agent asks you which one you want and runs it again, for example `curl -fsSL https://get.patchaudio.app | bash -s -- --profile dj`.
+
 ## What's inside
 
 A selection of the units in Patch; there are more, and the [documentation](https://patchaudio.app/docs) covers them all.
@@ -48,7 +50,7 @@ A selection of the units in Patch; there are more, and the [documentation](https
 | **Network** | Send and receive audio over your local network: RTP, AES67 and VBAN |
 | **Live coding** | Tidal, Pattern and the Sequencer, with the Visualiser on a second screen |
 
-Keyboard first, with a phone remote. Requires Omarchy on Arch Linux with Hyprland 0.56 or newer, on x86_64.
+Keyboard first, with a phone remote. Made for Omarchy (Arch Linux with Hyprland 0.56 or newer), and it runs on other Linux distributions with PipeWire too: Ubuntu 24.04 and newer, Linux Mint 22, Debian 13, Fedora 40 and newer, openSUSE Tumbleweed and Arch. On PCs (x86_64) and 64-bit ARM, including Omarchy on Apple Silicon MacBooks.
 
 ## Start here
 

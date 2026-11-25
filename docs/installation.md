@@ -10,9 +10,16 @@ It downloads the newest release for your machine from [Releases](https://github.
 
 ## Requirements
 
-- Omarchy / Arch Linux, with Hyprland 0.56 or newer.
-- A matching CPU architecture (`uname -m`).
-- Sudo access to install the Arch packages Patch needs.
+- Omarchy (Arch Linux with Hyprland 0.56 or newer), or another Linux distribution with PipeWire: Ubuntu 24.04 and newer, Linux Mint 22, Debian 13, Fedora 40 and newer, openSUSE Tumbleweed, or Arch.
+- A PC (x86_64) or 64-bit ARM (aarch64), as `uname -m` shows.
+- Sudo access to install the packages Patch needs (with pacman, apt, dnf or zypper).
+
+Each release has four kits; the one-line installer picks yours:
+
+| | PC (x86_64) | ARM (aarch64) |
+|---|---|---|
+| Omarchy | `patch-VERSION-linux-x86_64` | `patch-VERSION-linux-aarch64` |
+| Any other distribution | `patch-VERSION-linux-generic-x86_64` | `patch-VERSION-linux-generic-aarch64` |
 
 ## Download and verify
 
@@ -27,7 +34,9 @@ It downloads the newest release for your machine from [Releases](https://github.
    ./install.sh
    ```
 
-The installer asks how you use Patch (Standard, DJ, Podcast, Live coding, Everything or Custom), which modules come with it, and your default window layout. It installs the Arch packages Patch needs. Themes and wallpapers download from the release when you choose them.
+The installer asks how you use Patch (Standard, DJ, Podcast, Live coding, Everything or Custom), which modules come with it, and your default window layout. It installs the packages Patch needs with your system's package manager. Every setup includes the Patch themes with four wallpapers each; the other wallpapers and their intros download from the release when you add the Wallpapers module.
+
+With an AI agent or a script there is no terminal for the setup screen: a first install then lists the setups and stops without changing anything. Run it with `--profile standard|dj|podcast|live_coding|full` or `--modules a,b,…` (the list it prints).
 
 Then log out and back in once (or restart); the installer ends by saying so when it is needed. Patch works right away, but real-time audio, which keeps the sound steady when the computer is busy, starts with your next login. At login the audio service may start according to setup; Patch's windows do not open automatically.
 
@@ -49,4 +58,4 @@ From the extracted kit:
 ./uninstall.sh
 ```
 
-This restores Omarchy's own audio setup. The optional `--purge` flag also removes Patch's library and settings; use it only if you intend to remove those.
+This restores your system's own audio setup. The optional `--purge` flag also removes Patch's library and settings; use it only if you intend to remove those.
